@@ -9,3 +9,5 @@ auto
 *.toc
 *.pdf
 *.aux
+*.bbl
+*.blg
