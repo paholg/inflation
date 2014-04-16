@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 import subprocess
 
-subprocess.call(['bibtex', 'inflation'])
-subprocess.call(['pdflatex', 'inflation.tex'])
-#subprocess.call(['pdflatex', 'inflation.tex'])
-#subprocess.call(['pdflatex', 'inflation.tex'])
+latex = ['inflation']
+
+for l in latex:
+  subprocess.call(['pdflatex', l])
+  subprocess.call(['bibtex', l])
+  subprocess.call(['pdflatex', l])
+  subprocess.call(['pdflatex', l])
