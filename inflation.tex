@@ -1,10 +1,19 @@
 \documentclass[]{beamer}
 % \usepackage{beamerthemelined}
-\usepackage{pstricks}
+%\usepackage{pstricks}
 \usepackage{amsfonts,amssymb,amsmath,amsthm}
 \usepackage{graphicx}
 \usepackage{wallpaper}
 \usepackage{color}
+\usepackage[export]{adjustbox}
+
+%\usepackage{adjustbox}
+
+% \newcommand*{\MyIncludeGraphics}[2][]{%
+% \begin{adjustbox}{max size={\textwidth}{\textheight}}
+%     \includegraphics[#1]{#2}%
+% \end{adjustbox}
+% }
 
 % \setbeamertemplate{navigation symbols}{}
 \beamertemplatenavigationsymbolsempty
@@ -23,7 +32,7 @@
 \renewcommand{\t}[1]{\text{#1}}
 \newcommand{\abs}[1]{\left|#1\right|}
 
-\renewcommand{\red}[1]{{\bf \color{red} #1}}
+\newcommand{\red}[1]{{\bf \color{red} #1}}
 \newcommand{\fixme}[1]{\red{[#1]}}
 
 \begin{document}
@@ -95,12 +104,62 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Telescope}
+  \begin{figure}
+    \centering
+     \includegraphics[max size={\textwidth}{\textheight}]
+     {figs/B2_instrument_fig1}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Telescope}
+  \begin{figure}
+    \centering
+     \includegraphics[max size={\textwidth}{\textheight}]
+     {figs/B2_instrument_fig2}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Telescope}
+  \begin{figure}
+    \centering
+     \includegraphics[height=.8\textheight]
+     {figs/B2_instrument_fig3}
+  \end{figure}
+\end{frame}
+\begin{frame}
+  \frametitle{Telescope}
+  \begin{figure}
+    \centering
+     \includegraphics[height=.8\textheight]
+     {figs/B2_instrument_fig4}
+  \end{figure}
+\end{frame}
+\begin{frame}
+  \frametitle{Telescope}
+  \begin{figure}
+    \centering
+     \includegraphics[width=\textwidth]
+     {figs/B2_instrument_fig5}
+  \end{figure}
+\end{frame}
+% \begin{frame}
+%   \frametitle{Telescope}
+%   \begin{figure}
+%     \centering
+%      \includegraphics[max size={\textwidth}{\textheight}]
+%      {figs/B2_instrument_fig1}
+%   \end{figure}
+% \end{frame}
 
 \begin{frame}
   \frametitle{$E$ / $B$ Maps}
   \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{eb_maps}
+    \includegraphics[max size={\textwidth}{\textheight}]{eb_maps}
   \end{figure}
 \end{frame}
 
